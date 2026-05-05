@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张家豪 — 项目经历</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">张家豪</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">个人信息</a></li>
+      <li><a href="projects.html" data-page="projects.html">项目经历</a></li>
+      <li><a href="publications.html" data-page="publications.html">成果汇总</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <h1 style="text-align:center;">项目经历</h1>
+  <p style="text-align:center;color:var(--muted);margin-bottom:2rem;">科研项目与实习经历</p>
+
+  <!-- ====== 科研项目 ====== -->
+  <h2>科研项目</h2>
+
+  <!-- Project 1 -->
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>物理驱动AI的光通信信号处理技术</h3>
+      <span class="proj-period">2024.01 – 2027.06</span>
+    </div>
+    <span class="proj-role">AI信号处理算法设计</span>
+    <div class="proj-goal"><strong>目标：</strong>为解决纯数据驱动AI的过拟合问题，将物理机制融入神经网络，进行光信号损伤补偿。</div>
+    <div class="proj-outcome">
+      <strong>工作一：</strong>提出 PRDBP 算法，用物理规律约束并调节神经网络的框架，整合"物理知识应用于神经网络"与"神经网络信息反馈至物理域"的双向机制，采用优化-估计-初始化的循环结构，同时实现损伤补偿和参数估计。误码率比传统方法低一个数量级（Q1+TOP 期刊 TCOM）。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>工作二：</strong>提出 DEAN 算法，通过双端神经网络的方式，同时校正预模型误差和后模型误差，以增强算法的性能和稳定性。与储备池计算结合，以 3% 的算法复杂度提升换取 2 倍的稳定性提升（Q1+TOP 期刊 JLT）。
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>光子AI计算架构设计与硬件实现</h3>
+      <span class="proj-period">2021.11 – 2024.06</span>
+    </div>
+    <span class="proj-role">光子AI硬件架构设计</span>
+    <div class="proj-goal"><strong>目标：</strong>为改善传统电子计算的劣势，构建光电储备池神经网络及其硬件实验平台。</div>
+    <div class="proj-outcome">
+      <strong>工作：</strong>提出了一种深度光子 TDRC 加速方案，用于解决传统方案信息处理速度慢的问题。通过采用多层级联网络结构和扩充状态矩阵，在不增加硬件成本的前提下有效减小掩码尺寸，将其运算速度提升 10 倍，而性能轻微下降 2.4%（Q1+TOP 期刊 JLT）。
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>光纤信道建模算法研究</h3>
+      <span class="proj-period">2023.06 – 2027.06</span>
+    </div>
+    <span class="proj-role">光纤建模与损伤补偿负责人</span>
+    <div class="proj-goal"><strong>目标：</strong>为深入PDM-WDM系统的信道损伤补偿技术，研究了光纤通信的信道建模技术。</div>
+    <div class="proj-outcome">
+      <strong>工作：</strong>基于SSF法进行了单/双偏振与单/多波长的光纤通信建模原理学习与算法实现。研究并实现色散与非线性损伤补偿技术，如神经网络法、储备池计算法、DBP法、微扰法等。
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>光通信与光AI欧盟国际合作项目</h3>
+      <span class="proj-period">2025.03 – 2027.06</span>
+    </div>
+    <span class="proj-role">实验与算法设计骨干</span>
+    <div class="proj-goal"><strong>目标：</strong>为进一步验证研究成果在光通信与光AI中的有效性，参与国际科研合作项目。</div>
+    <div class="proj-outcome">
+      <strong>工作：</strong>与欧洲 KTH/RTU Oskars 院士及美国 MSU Vincent 教授团队深度合作，赴欧洲/在国内进行合作项目实验：1. 相干光通信系统的实验平台搭建与信号处理算法研究。2. 基于微环谐振器的集成光AI实验与信号处理研究。3. 将光子计算应用于光纤通信损伤补偿研究。
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>光纤传感信号降噪处理研究</h3>
+      <span class="proj-period">2020.01 – 2021.06</span>
+    </div>
+    <span class="proj-role">信号降噪与特征提取</span>
+    <div class="proj-goal"><strong>目标：</strong>为提高BOTDR型光纤传感的感知精度，研究其信号处理算法。</div>
+    <div class="proj-outcome">
+      <strong>工作：</strong>进行了光纤传感的信号处理实现。先通过时频变换建立"功率谱密度-距离-频率"的三维曲面图，再用频域累加+小波变换实现降噪算法，以提高信噪比，便于提取外界信息进行感知。项目参与大创竞赛并获得国家级评级。
+    </div>
+  </div>
+
+  <!-- ====== 实习经历 ====== -->
+  <h2>实习经历</h2>
+
+  <div class="intern-card">
+    <div class="proj-head">
+      <h3>智创科汇（ZKIC）公司</h3>
+      <span class="proj-period">2023.06 – 2025.12</span>
+    </div>
+    <span class="proj-role" style="background:#e6f3f1;color:var(--accent);">光纤建模负责人</span>
+    <ul style="margin-top:.75rem;">
+      <li>与ZKIC公司/浙大绍兴研究院以实习形式校企合作，深度参与商用光电仿真软件开发。</li>
+      <li>负责基于 MATLAB/Python/C++ 的多平台光纤信道建模算法研究与实现。</li>
+      <li>将实验室科研成果转化为工业级商用软件模块，产出成果被<a href="https://mp.weixin.qq.com/s/rznr2Fu4Wmu6DRkxdVBb4A">绍兴市政府官方报道</a>。</li>
+      <li>指导团队本科生成员进行算法创新并投稿至 IEEE PJ 期刊。</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>&copy; 2026 张家豪. All rights reserved.</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
