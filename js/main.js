@@ -6,3 +6,4 @@ document.addEventListener("DOMContentLoaded", function () {
     a.classList.toggle("active", a.getAttribute("data-page") === page);
   });
 });
+
