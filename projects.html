@@ -28,23 +28,39 @@
   <h1 style="text-align:center;">项目经历</h1>
   <p style="text-align:center;color:var(--muted);margin-bottom:2rem;">科研项目与实习经历</p>
 
-
   <!-- ====== 实习经历 ====== -->
   <h2>实习经历</h2>
 
   <div class="proj-card">
     <div class="proj-head">
-      <h3>智创科汇（ZKIC）公司</h3>
-      <span class="proj-period">2023.06 – 2025.12</span>
+      <h3>海康威视 · 研究部（超新星项目）</h3>
+      <span class="proj-period">2026.06 – 2026.09</span>
     </div>
-    <span class="proj-role">光纤建模与损伤补偿</span>
-    <div class="proj-goal"><strong>背景：</strong>与ZKIC公司/浙大绍兴研究院以实习形式校企合作，参与商用光电仿真软件开发。</div>
-    <div class="proj-goal" style="margin-top:.5rem;"><strong>目标：</strong>为准确进行光纤建模，研究 PDM-WDM 光纤系统的动态特性与信道损伤补偿技术。</div>
+    <span class="proj-role">传感图像 AI 信号处理算法</span>
+    <div class="proj-goal"><strong>背景与目标：</strong>ToF 传感图像在多路径干扰、动态场景和噪声条件下易产生测距误差，需要使用 AI 算法结合物理模型提升系统鲁棒性。</div>
     <div class="proj-outcome">
-      <strong>工作一：</strong>负责基于 MATLAB/Python/C++ 的多平台光纤信道建模算法研究与实现。基于 SSF 法实现了双偏振多波长的长距离光纤链路建模。将实验室科研成果转化为工业级软件模块。
+      <strong>技术方案：</strong>调研 PB-ToF / AMCW-ToF 相机的传感机理、干扰来源与 ISP 流程；负责开发与完善 IToF 相机数据采集的 Python 脚本与 GUI 软件，并用于相机数据采集实验；使用基于自监督学习、模型预训练和 UNet 结构的 AI 算法辅助传统图像信号处理模型，提升系统性能。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>工作二：</strong>研究色散与非线性损伤补偿技术的算法实现与创新，如神经网络法、储备池计算法、DBP法、微扰法等。使用 PyTorch/TensorFlow 进行 AI 算法实现。
+      <strong>成果：</strong>协助团队完成 ToF 传感的 AI 信号处理设计与开发，以及数据采集软件的搭建与实验。
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>智创科汇 / 浙大研究院</h3>
+      <span class="proj-period">2023.09 – 2025.09</span>
+    </div>
+    <span class="proj-role">光电系统建模算法预研与开发</span>
+    <div class="proj-goal"><strong>背景与目标：</strong>商用光电仿真软件需要准确模拟 PDM-WDM 光纤系统的动态传输效应，并支撑链路性能分析、信道损伤建模与补偿算法验证。</div>
+    <div class="proj-outcome">
+      <strong>技术方案一：</strong>基于 SSF 方法构建双偏振、多波长、长距离光纤链路仿真模型，使用 Python / MATLAB / C++ 实现色散、非线性、损耗和放大噪声等关键物理过程建模。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案二：</strong>围绕系统性能优化，研究 DBP、微扰法、神经网络和储备池计算等损伤补偿与参数校准方法，并通过仿真与实验结果验证算法收益。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案三：</strong>推动算法原型向软件功能模块转化。参与仿真平台功能设计、算法接口定义和模块验证，协助完成链路建模、指标验证、问题定位和模型修正。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
       <strong>成果：</strong>发布商业级光电仿真平台，被绍兴市政府官方报道。进行算法创新并受邀投稿 IEEE PJ。
@@ -57,84 +73,77 @@
   <!-- Project 1 -->
   <div class="proj-card">
     <div class="proj-head">
-      <h3>物理驱动AI的光通信信号处理技术</h3>
+      <h3>物理驱动 AI 的信号处理技术</h3>
       <span class="proj-period">2024.01 – 2027.06</span>
     </div>
-    <span class="proj-role">AI信号处理算法设计</span>
-    <div class="proj-goal"><strong>目标一：</strong>通过物理模型参数化为 AI 的方法，建立物理与 AI 的桥梁，增强 AI 的可解释性。</div>
+    <span class="proj-role">AI 信号处理算法设计与验证</span>
+    <div class="proj-goal"><strong>背景与目标：</strong>相干光通信系统性能受参数失配和模型误差影响，传统模型和纯 AI 方法分别缺少自适应性和可解释性。因此需要构建“物理模型参数化 + AI 自适应补偿”的 DSP 框架，以提高系统性能。</div>
     <div class="proj-outcome">
-      <strong>工作：</strong>提出 PRDBP 算法，用物理规律约束并调节神经网络的框架，整合"物理模型用于AI"与"AI信息反馈物理"的双向机制，可用于实验系统参数不精确时的信号处理。
+      <strong>技术方案一：</strong>提出 PRDBP 算法，将 DBP 物理传播参数转化为可学习神经网络参数，并用光纤传播规律约束模型训练，实现“物理模型指导 AI”与“AI 反馈物理参数”的双向机制。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>同时实现信号恢复和参数估计。错误率降至传统DBP法的12%（Q1+TOP期刊 TCOM）。
-    </div>
-    <div class="proj-goal" style="margin-top:.75rem;"><strong>目标二：</strong>提升 AI 的后误差补偿法对外界参数变化的鲁棒性。</div>
-    <div class="proj-outcome">
-      <strong>工作：</strong>提出 DEAN 算法，采用双端神经网络，同时校正预模型误差和后模型误差。更好地纠正了模型误差，提升了算法对外界扰动的稳定性。
+      <strong>成果一：</strong>同时实现受损信号的恢复和未知物理参数的估计，错误率降至传统 DBP 法的 12%。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>以18%复杂度提升为代价，使算法提升 2 倍的外界扰动稳定性（Q1+TOP期刊 JLT）。
+      <strong>技术方案二：</strong>提出 DEAN 算法，在物理模型前后引入双端神经网络，分别校正预模型误差和后模型误差，提升 AI 后补偿方法对外界参数扰动的适应能力。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>成果二：</strong>使算法提升 2 倍的外界扰动稳定性，而复杂度开销仅提升 18%。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案三：</strong>与海外高校院士团队开展单通道 200G 相干光通信实验，结合实验链路数据与光子 AI 方法，验证所提出信号处理算法的实验适用性。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>成果三：</strong>推动算法从仿真研究拓展至实验系统验证、跨团队合作与应用场景延伸。
     </div>
   </div>
 
   <!-- Project 2 -->
   <div class="proj-card">
     <div class="proj-head">
-      <h3>光子AI计算架构设计与硬件实现</h3>
-      <span class="proj-period">2021.11 – 2024.06</span>
+      <h3>基于光子计算的 AI 硬件实现</h3>
+      <span class="proj-period">2021.11 – 2027.06</span>
     </div>
-    <span class="proj-role">光子AI硬件架构设计</span>
-    <div class="proj-goal"><strong>目标：</strong>探索 AI 在硬件端的实现方案，利用光计算进行神经网络的硬件实现。</div>
+    <span class="proj-role">实验架构与信号处理设计</span>
+    <div class="proj-goal"><strong>背景与目标：</strong>传统电子神经网络运算面临带宽和功耗限制，需要利用光计算进行神经网络的硬件实现，以发挥其高速并行和模拟域处理能力。</div>
     <div class="proj-outcome">
-      <strong>工作：</strong>提出 深度光子 TDRC 硬件神经网络方案，通过采用多层级联网络结构和扩充状态矩阵有效提升系统性能。在光电硬件平台进行了通信、语音、图像多种信号处理任务的验证。
+      <strong>技术方案一：</strong>提出深度光子 RC 神经网络方案，在光电硬件平台上实现多层级联结构，并通过扩充状态矩阵提升系统对多尺度非线性特征的利用效率。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>所提出的架构使系统准确率从 84% 提升至 92%（Q1+TOP期刊 JLT）。
+      <strong>成果一：</strong>完成多个机器学习任务验证，优化光子 AI 架构，使系统准确率从 84% 提升至 92%。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案二：</strong>参与欧盟国际合作项目，开展基于微环谐振器的集成光 AI 实验与信号处理研究，探索片上光子计算架构的实现路径。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>成果二：</strong>进行光芯片流片，使光子 AI 计算架构向集成光子硬件平台拓展。
     </div>
   </div>
 
   <!-- Project 3 -->
   <div class="proj-card">
     <div class="proj-head">
-      <h3>光通信与光AI欧盟国际合作项目</h3>
-      <span class="proj-period">2025.03 – 2027.06</span>
-    </div>
-    <span class="proj-role">实验与算法设计</span>
-    <div class="proj-goal"><strong>目标：</strong>进一步验证研究成果在光通信与光AI中的有效性，参与国际科研合作项目与实验。</div>
-    <div class="proj-outcome">
-      <strong>工作：</strong>与欧洲 KTH/RTU Oskars 院士及美国 MSU/UVA Vincent 教授团队深度合作，赴欧洲/在国内进行合作项目实验：
-    </div>
-    <div class="proj-outcome" style="margin-top:.25rem;">
-      1. 相干光通信系统的实验平台搭建与信号处理算法研究（已搭建单通道 200G 实验系统）。
-    </div>
-    <div class="proj-outcome">
-      2. 基于微环谐振器的集成光AI实验与信号处理研究（已计划流片方案）。
-    </div>
-    <div class="proj-outcome">
-      3. 将光子计算应用于光纤通信损伤补偿研究（已制定基于微扰法的验证方案）。
-    </div>
-    <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>进行所提出算法的实验验证、工作融合与应用拓展。
-    </div>
-  </div>
-
-  <!-- Project 4 -->
-  <div class="proj-card">
-    <div class="proj-head">
-      <h3>光纤传感信号降噪处理研究</h3>
+      <h3>光传感的信号处理研究</h3>
       <span class="proj-period">2020.01 – 2021.06</span>
     </div>
     <span class="proj-role">信号降噪与特征提取算法实现</span>
-    <div class="proj-goal"><strong>目标：</strong>提高BOTDR型光纤传感的感知精度，研究其信号处理算法。</div>
+    <div class="proj-goal"><strong>背景与目标：</strong>BOTDR 光纤传感的信噪比较低，需要使用 DSP 提取特征信息并提高感知精度。</div>
     <div class="proj-outcome">
-      <strong>工作：</strong>进行光纤传感的信号处理。先通过时频变换建立"功率谱密度-距离-频率"的三维曲面图，再用频域累加+小波变换实现降噪算法，以提高信噪比，便于提取外界信息进行感知。
+      <strong>技术方案：</strong>使用 STFT 构建“功率谱-距离-频率”信息图，提取沿光纤分布的频域特征，并结合频域累加与小波变换实现信号降噪。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>项目参与大创竞赛并获得国家级评级。
+      <strong>成果：</strong>项目参与全国大学生创新创业训练计划，结题并获得一等奖。
     </div>
   </div>
 
-
+  <!-- Other research -->
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>其他科研经历</h3>
+    </div>
+    <span class="proj-role">跨方向研究与合作</span>
+    <div class="proj-goal">参与太赫兹无线通信、AI 辅助混沌加密通信、频率合成维度光子 AI 等研究；作为前三作者发表一区TOP论文 3 篇。</div>
+  </div>
 
 </main>
 

@@ -6,6 +6,14 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 Personal academic portfolio site for 张家豪 (Jiahao Zhang), a PhD student at Zhejiang University. The site is hosted via GitHub Pages at `pdogan233.github.io/portfolio/`.
 
+## Resume Source
+
+The authoritative resume for future content updates is:
+
+`D:\Users\PDOGAN\OneDrive\Files\Job\简历\简历-张家豪-浙大-电子科学技术-博士.pdf`
+
+Use this external PDF as the source of truth when refreshing the site. The PDF copy under `docs/` may be older unless it has been explicitly synchronized.
+
 ## No Build Step
 
 This is a pure static site — no build tools, no package.json, no dependencies. Open any `.html` file directly in a browser to preview. No server or build step needed.
