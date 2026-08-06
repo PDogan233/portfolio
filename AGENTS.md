@@ -10,7 +10,7 @@ Personal academic portfolio site for 张家豪 (Jiahao Zhang), a PhD student at 
 
 The authoritative resume for future content updates is:
 
-`D:\Users\PDOGAN\OneDrive\Files\Job\简历\简历-张家豪-浙大-电子科学技术-博士.pdf`
+`D:\Users\PDOGAN\OneDrive\Files\Job\简历\简历-张家豪-浙大-博士-电子科学技术.pdf`
 
 Use this external PDF as the source of truth when refreshing the site. The PDF copy under `docs/` may be older unless it has been explicitly synchronized.
 

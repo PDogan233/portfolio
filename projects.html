@@ -28,58 +28,19 @@
   <h1 style="text-align:center;">项目经历</h1>
   <p style="text-align:center;color:var(--muted);margin-bottom:2rem;">科研项目与实习经历</p>
 
-  <!-- ====== 实习经历 ====== -->
-  <h2>实习经历</h2>
-
-  <div class="proj-card">
-    <div class="proj-head">
-      <h3>海康威视 · 研究部（超新星项目）</h3>
-      <span class="proj-period">2026.06 – 2026.09</span>
-    </div>
-    <span class="proj-role">传感图像 AI 信号处理算法</span>
-    <div class="proj-goal"><strong>背景与目标：</strong>ToF 传感图像在多路径干扰、动态场景和噪声条件下易产生测距误差，需要使用 AI 算法结合物理模型提升系统鲁棒性。</div>
-    <div class="proj-outcome">
-      <strong>技术方案：</strong>调研 PB-ToF / AMCW-ToF 相机的传感机理、干扰来源与 ISP 流程；负责开发与完善 IToF 相机数据采集的 Python 脚本与 GUI 软件，并用于相机数据采集实验；使用基于自监督学习、模型预训练和 UNet 结构的 AI 算法辅助传统图像信号处理模型，提升系统性能。
-    </div>
-    <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>协助团队完成 ToF 传感的 AI 信号处理设计与开发，以及数据采集软件的搭建与实验。
-    </div>
-  </div>
-
-  <div class="proj-card">
-    <div class="proj-head">
-      <h3>智创科汇 / 浙大研究院</h3>
-      <span class="proj-period">2023.09 – 2025.09</span>
-    </div>
-    <span class="proj-role">光电系统建模算法预研与开发</span>
-    <div class="proj-goal"><strong>背景与目标：</strong>商用光电仿真软件需要准确模拟 PDM-WDM 光纤系统的动态传输效应，并支撑链路性能分析、信道损伤建模与补偿算法验证。</div>
-    <div class="proj-outcome">
-      <strong>技术方案一：</strong>基于 SSF 方法构建双偏振、多波长、长距离光纤链路仿真模型，使用 Python / MATLAB / C++ 实现色散、非线性、损耗和放大噪声等关键物理过程建模。
-    </div>
-    <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>技术方案二：</strong>围绕系统性能优化，研究 DBP、微扰法、神经网络和储备池计算等损伤补偿与参数校准方法，并通过仿真与实验结果验证算法收益。
-    </div>
-    <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>技术方案三：</strong>推动算法原型向软件功能模块转化。参与仿真平台功能设计、算法接口定义和模块验证，协助完成链路建模、指标验证、问题定位和模型修正。
-    </div>
-    <div class="proj-outcome" style="margin-top:.5rem;">
-      <strong>成果：</strong>发布商业级光电仿真平台，被绍兴市政府官方报道。进行算法创新并受邀投稿 IEEE PJ。
-    </div>
-  </div>
-
   <!-- ====== 科研项目 ====== -->
   <h2>科研项目</h2>
 
   <!-- Project 1 -->
   <div class="proj-card">
     <div class="proj-head">
-      <h3>物理驱动 AI 的信号处理技术</h3>
+      <h3>物理驱动 AI 的通信信号处理</h3>
       <span class="proj-period">2024.01 – 2027.06</span>
     </div>
     <span class="proj-role">AI 信号处理算法设计与验证</span>
     <div class="proj-goal"><strong>背景与目标：</strong>相干光通信系统性能受参数失配和模型误差影响，传统模型和纯 AI 方法分别缺少自适应性和可解释性。因此需要构建“物理模型参数化 + AI 自适应补偿”的 DSP 框架，以提高系统性能。</div>
     <div class="proj-outcome">
-      <strong>技术方案一：</strong>提出 PRDBP 算法，将 DBP 物理传播参数转化为可学习神经网络参数，并用光纤传播规律约束模型训练，实现“物理模型指导 AI”与“AI 反馈物理参数”的双向机制。
+      <strong>技术方案一：</strong>提出 PRDBP 算法，将传统物理模型参数化为可学习神经网络参数，并用光纤传播规律约束模型训练，实现“物理模型指导 AI”与“AI 反馈物理参数”的双向增强机制。
     </div>
     <div class="proj-outcome" style="margin-top:.5rem;">
       <strong>成果一：</strong>同时实现受损信号的恢复和未知物理参数的估计，错误率降至传统 DBP 法的 12%。
@@ -101,7 +62,7 @@
   <!-- Project 2 -->
   <div class="proj-card">
     <div class="proj-head">
-      <h3>基于光子计算的 AI 硬件实现</h3>
+      <h3>基于集成光电子的 AI 硬件实现</h3>
       <span class="proj-period">2021.11 – 2027.06</span>
     </div>
     <span class="proj-role">实验架构与信号处理设计</span>
@@ -142,7 +103,52 @@
       <h3>其他科研经历</h3>
     </div>
     <span class="proj-role">跨方向研究与合作</span>
-    <div class="proj-goal">参与太赫兹无线通信、AI 辅助混沌加密通信、频率合成维度光子 AI 等研究；作为前三作者发表一区TOP论文 3 篇。</div>
+    <div class="proj-goal">参与太赫兹无线通信、AI 辅助混沌加密通信、频率合成维度光子 AI 等项目，协助项目的实验与算法设计；作为前三作者发表一区TOP论文 3 篇。</div>
+  </div>
+
+  <!-- ====== 实习经历 ====== -->
+  <h2>实习经历</h2>
+
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>海康威视 · 研究院</h3>
+      <span class="proj-period">2026.06 – 2026.09</span>
+    </div>
+    <span class="proj-role">TOF 深度感知与 AI 图像处理算法</span>
+    <div class="proj-goal"><strong>背景与目标：</strong>ToF 深度图像在多路径干扰、动态场景和噪声条件下易产生测距误差，需要结合传感器物理模型与 AI 图像处理方法，提高深度测量精度和系统鲁棒性。</div>
+    <div class="proj-outcome">
+      <strong>技术方案一：</strong>研究 PB-ToF、AMCW-ToF 相机的传感机理、误差来源与 ISP 处理流程，分析传感器数据形成、深度计算和图像处理环节中的主要干扰因素。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案二：</strong>负责开发与完善 IToF 相机数据采集 Python 脚本和 GUI 工具，开展相机数据采集实验，实现数据采集流程的自动化，为后续算法训练和验证提供数据支持。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案三：</strong>使用自监督学习、模型预训练和 U-Net 结构构建 AI 图像处理方案，将神经网络与传统物理模型及图像信号处理流程结合，辅助完成深度图像误差补偿并提升系统适应性。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>成果：</strong>协助团队完成 ToF 深度感知 AI 信号处理方案的设计与开发，完成相机数据采集工具开发和实验流程自动化，加速完成 10 万张数据样本采集，支撑深度图像算法的训练与验证。
+    </div>
+  </div>
+
+  <div class="proj-card">
+    <div class="proj-head">
+      <h3>智创科汇 / 浙大研究院</h3>
+      <span class="proj-period">2023.09 – 2025.09</span>
+    </div>
+    <span class="proj-role">光电系统建模算法预研与开发</span>
+    <div class="proj-goal"><strong>背景与目标：</strong>商用光电仿真软件需要准确模拟 PDM-WDM 光纤系统的动态传输效应，并支撑链路性能分析、信道损伤建模与补偿算法验证。</div>
+    <div class="proj-outcome">
+      <strong>技术方案一：</strong>基于 SSF 方法构建双偏振、多波长、长距离光纤链路仿真模型，使用 Python / MATLAB / C++ 实现色散、非线性、损耗和放大噪声等关键物理过程建模。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案二：</strong>围绕系统性能优化，研究 DBP、微扰法、神经网络和储备池计算等损伤补偿与参数校准方法，并通过仿真与实验结果验证算法收益。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>技术方案三：</strong>推动算法原型向软件功能模块转化。参与仿真平台功能设计、算法接口定义和模块验证，协助完成链路建模、指标验证、问题定位和模型修正。
+    </div>
+    <div class="proj-outcome" style="margin-top:.5rem;">
+      <strong>成果：</strong>发布商业级光电仿真平台，被绍兴市政府官方报道。进行算法创新并受邀发表 IEEE PJ。
+    </div>
   </div>
 
 </main>
